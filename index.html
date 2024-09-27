@@ -48,7 +48,9 @@
         grid-template-rows: repeat(6, auto);
         grid-template-areas:
           "_header _header"
-          "_red    _red";
+          "_red    _red"
+          "_green  _green"
+          "_blue   _blue";
       }
       #dialog > header {
         grid-area: _header;
@@ -63,6 +65,12 @@
       }
       #dialog > .color:has(> #red) {
         grid-area: _red;
+      }
+      #dialog > .color:has(> #green) {
+        grid-area: _green;
+      }
+      #dialog > .color:has(> #blue) {
+        grid-area: _blue;
       }
       #dialog > .color > .color-square {
         height: 2.25rem;
