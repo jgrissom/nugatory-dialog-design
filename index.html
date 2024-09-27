@@ -50,7 +50,8 @@
           "_header _header"
           "_red    _red"
           "_green  _green"
-          "_blue   _blue";
+          "_blue   _blue"
+          "_text   _text";
       }
       #dialog > header {
         grid-area: _header;
@@ -71,6 +72,9 @@
       }
       #dialog > .color:has(> #blue) {
         grid-area: _blue;
+      }
+      #dialog > div:has(> #text) {
+        grid-area: _text;
       }
       #dialog > .color > .color-square {
         height: 2.25rem;
