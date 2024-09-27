@@ -42,8 +42,9 @@
         border-radius: 0.3em;
       }
       #dialog {
-        background: #ffbfbf;
-        box-shadow: 0.15rem 0.15rem 0.35rem rgb(67, 0, 0);
+        background: var(--main-color);
+        box-shadow: 0.15rem 0.15rem 0.35rem #1a1a1a;
+        border: 0.1rem solid #1a1a1a;
         padding: 0.8rem;
         width: 278px;
         position: fixed;
@@ -96,6 +97,7 @@
         width: 2.25rem;
       }
       #dialog > .color > .value {
+        color: var(--white-color);
         width: 2.25rem;
         text-align: right;
         font: normal 500 1.6rem "Teko", sans-serif;
@@ -111,6 +113,10 @@
         font: normal 500 1.6rem "Teko", sans-serif;
         outline: none;
         width: 100%;
+      }
+      #dialog > div > button {
+        background-color: var(--button-color);
+        color: var(--white-color);
       }
 
       @media screen and (min-width: 480px) {
