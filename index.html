@@ -51,7 +51,8 @@
           "_red    _red"
           "_green  _green"
           "_blue   _blue"
-          "_text   _text";
+          "_text   _text"
+          "_save   _cancel";
       }
       #dialog > header {
         grid-area: _header;
@@ -75,6 +76,12 @@
       }
       #dialog > div:has(> #text) {
         grid-area: _text;
+      }
+      #dialog > div:has(> #save) {
+        grid-area: _save;
+      }
+      #dialog > div:has(> #cancel) {
+        grid-area: _cancel;
       }
       #dialog > .color > .color-square {
         height: 2.25rem;
