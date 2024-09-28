@@ -120,6 +120,15 @@
         background-color: var(--button-color);
         color: var(--white-color);
       }
+      #overlay {
+        background-color: var(--white-color);
+        opacity: 0.3;
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
 
       @media screen and (min-width: 480px) {
         #dialog {
@@ -136,6 +145,7 @@
     </style>
   </head>
   <body>
+    <div id="overlay"></div>
     <div id="dialog">
       <header>nugatory</header>
       <div class="color">
